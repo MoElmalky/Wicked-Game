@@ -30,6 +30,9 @@
     <ClCompile Include="sprites.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="goblin.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="gameObject.h">
@@ -48,6 +51,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="sprites.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="goblin.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -77,6 +83,9 @@
       <Filter>Resource Files</Filter>
     </Image>
     <Image Include="assets\bridge.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="assets\goblin.png">
       <Filter>Resource Files</Filter>
     </Image>
   </ItemGroup>

@@ -5,9 +5,7 @@ using std::endl;
 
 int main()
 {
-	Game *game = new Game();
-
-	delete game;
+	Game game;
 
 	return 0;
 }

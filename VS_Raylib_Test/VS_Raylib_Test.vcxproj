@@ -133,6 +133,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="game.cpp" />
+    <ClCompile Include="goblin.cpp" />
     <ClCompile Include="levels.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="player.cpp" />
@@ -141,6 +142,7 @@
   <ItemGroup>
     <ClInclude Include="game.h" />
     <ClInclude Include="gameObject.h" />
+    <ClInclude Include="goblin.h" />
     <ClInclude Include="level.h" />
     <ClInclude Include="levels.h" />
     <ClInclude Include="player.h" />
@@ -149,6 +151,7 @@
   <ItemGroup>
     <Image Include="assets\bridge.png" />
     <Image Include="assets\foam.png" />
+    <Image Include="assets\goblin.png" />
     <Image Include="assets\player.png" />
     <Image Include="assets\rocks_01.png" />
     <Image Include="assets\rocks_02.png" />

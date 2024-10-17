@@ -11,8 +11,10 @@ struct Sprite
 
 enum Textures {
 	Terrain,
-	water,
-	foam
+	Water,
+	Foam,
+	goblin,
+	player
 };
 
 class Sprites {
@@ -29,6 +31,8 @@ public:
 	inline static Texture terrain = { 0 };
 	inline static Texture water = { 0 };
 	inline static Texture foam = { 0 };
+	inline static Texture goblin = { 0 };
+	inline static Texture player = { 0 };
 	inline static Sprite grass_topLeft = { Terrain,{0,0,64,64 } };
 	inline static Sprite grass_top = { Terrain,{64,0,64,64 } };
 	inline static Sprite grass_topRight = { Terrain,{128,0,64,64 } };

@@ -11,8 +11,8 @@ protected:
 	int width;
 public:
 	Level() { height = 0; width = 0; }
-	~Level() {}
-	virtual void drawLevel(const float&) const = 0;
-	virtual void updateLevel(const float&) = 0;
+	virtual ~Level() {}
+	virtual void DrawLevel() const = 0;
+	virtual void UpdateLevel(const float&) = 0;
 };
 

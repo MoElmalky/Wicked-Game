@@ -5,12 +5,20 @@ Level_1::Level_1(int width, int height) {
 	this->width = width;
 	this->height = height;
 	std::cout << "GAME: Level 1 Inisialized.\n";
+	gameObjects.push_back(new Goblin({200,200}));
+	gameObjects.push_back(new Goblin({40,40}));
 }
 
 Level_1::~Level_1() {
+
+	std::cout << "GAME: Deleting Level 1 Game Objects.\n";
+	for (auto &gameObject : gameObjects) {
+		std::cout << "GAME: Game Object " << gameObject->GetID() << "Deleted\n";
+		delete gameObject;
+	}
 }
 
-void Level_1::drawLevel(const float& dt) const {
+void Level_1::DrawLevel() const {
 	static bool print = true;
 	for (int x = 0; x < width; x++) {
 		Sprites::DrawFoam((x - 1) * 64, - 64);
@@ -56,12 +64,19 @@ void Level_1::drawLevel(const float& dt) const {
 		}
 	}
 
+	for (auto &gameObject : gameObjects) {
+		gameObject->Draw();
+	}
+
 	if (print) {
 		std::cout << "GAME: Drawing Terrain.\n";
 		print = false;
 	}
 }
 
-void Level_1::updateLevel(const float& dt) {
+void Level_1::UpdateLevel(const float& dt) {
 
+	for (auto &gameObject : gameObjects) {
+		gameObject->Update(dt);
+	}
 }
